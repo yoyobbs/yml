@@ -42,7 +42,7 @@ services:
 #      - CLOUDFLARE_EMAIL=xxxxxx@out.look.com
 #      - CLOUDFLARE_API_KEY=xxxxxxx
       - V2RAY_DOMAIN=xxxx.com
-      - V2RAY_PATH=/v2ray
+      - V2RAY_PATH=/fish
       - V2RAY_EMAIL=xxxx@outlook.com
       - V2RAY_PORT=10550
       - V2RAY_OUTSIDE_PORT=443

@@ -256,7 +256,7 @@ config_caddy_docker(){
     sed -i "s|sspanel_url:.*|sspanel_url: '${ssrpanel_url}'|"  ./docker-compose.yml
     sed -i "s|key:.*|key: '${ssrpanel_key}'|"  ./docker-compose.yml
     sed -i "s|speedtest:.*|speedtest: ${ssrpanel_speedtest}|"  ./docker-compose.yml
-    sed -i "s|api_port:.*|api_port: ${v2ray_api_port}a" ./docker-compose.yml
+    sed -i "s|api_port:.*|api_port: ${v2ray_api_port}|" ./docker-compose.yml
     sed -i "s|downWithPanel:.*|downWithPanel: ${v2ray_downWithPanel}|" ./docker-compose.yml
     sed -i "s|V2RAY_DOMAIN=xxxx.com|V2RAY_DOMAIN=${v2ray_domain}|"  ./docker-compose.yml
     sed -i "s|V2RAY_PATH=/v2ray|V2RAY_PATH=${v2ray_path}|"  ./docker-compose.yml
@@ -270,7 +270,7 @@ config_caddy_docker_cloudflare(){
 
     # Set caddy cloudflare ddns email
     echo "caddy cloudflare ddns email"
-    read -p "(No default ):" cloudflare_emaila
+    read -p "(No default ):" cloudflare_email
     [ -z "${cloudflare_email}" ]
     echo
     echo "---------------------------"

@@ -6,7 +6,7 @@
 
 ## v2ray rico版本
 
-    mkdir v2ray-agent  &&   cd v2ray-agent && curl https://raw.githubusercontent.com/xiaoyanggo/v2rayshell/master/v2xy.sh -o v2xy.sh &&  chmod +x v2xy.sh &&  bash v2xy.sh
+    mkdir v2ray-agent  &&   cd v2ray-agent && curl https://raw.githubusercontent.com/yoyobbs/yml/master/v2xy.sh -o v2xy.sh &&  chmod +x v2xy.sh &&  bash v2xy.sh
 ## rico 版本 docker 对接：
     #添加节点
     地址;端口;2;ws;;path=/img|host=域名
